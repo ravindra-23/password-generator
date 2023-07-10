@@ -9,23 +9,43 @@
 <body>
 	<div class="container">
 		<h1 class="app-title">Password Generator</h1>
-		<h3>password</h3>
+		<h3 class="password-display" id="passwordDisplay">password</h3>
 
-		<form>
-			<label for="characterAmountNumber">Number of Characters</label>
-			<input type="range" min="1" max="50" value="10" id="characterAmountRange">
-			<input type="number" min="1" max="50" value="10" id="characterAmountNumber">
+		<form class="password-form" id="passwordGeneratorForm">
+			<div class="range-input">
+				<label for="characterAmountNumber">Number of Characters</label>
+				<input type="range" min="1" max="50" value="10" id="characterAmountRange">
+				<input type="number" min="1" max="50" value="10" id="characterAmountNumber">
+			</div>
 
-			<label for="includeUppercase">Include Uppercase</label>
-			<input type="checkbox" id="includeUppercase" >
+			<div class="custom-input">
+				<label for="includeUppercase">Include Uppercase
+					<input type="checkbox" id="includeUppercase" >
+					<svg viewBox="0 0 64 64" height="1em" width="1em">
+						<path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+					</svg>
+				</label>
+			</div>
 
-			<label for="includeNumbers">Include Numbers</label>
-			<input type="checkbox" id="includeNumbers" >
+			<div class="custom-input">
+				<label for="includeNumbers">Include Numbers
+					<input type="checkbox" id="includeNumbers" >
+					<svg viewBox="0 0 64 64" height="1em" width="1em">
+						<path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+					</svg>
+				</label>
+			</div>
 
-			<label for="includeSymbols">Include Symbols</label>
-			<input type="checkbox" id="includeSymbols" >
+			<div class="custom-input">
+				<label for="includeSymbols">Include Symbols
+					<input type="checkbox" id="includeSymbols" >
+					<svg viewBox="0 0 64 64" height="1em" width="1em">
+						<path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+					</svg>
+				</label>
+			</div>
 
-			<button type="submit">Generate Password</button>
+			<button class="submit-button" type="submit">Generate Password</button>
 		</form>
 	</div>
 
