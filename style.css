@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	background-color: #00111C;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+
+input {
+	font-family: 'Nunito', sans-serif;
+}
+
+.container {
+	background-color: #002137;
+	text-align: center;
+	padding: 50px;
+	width: 600px;
+	border-radius: 20px;
+	color: #97BED9;
+	box-shadow: 8px 8px 25px 0px rgba(0, 64, 108, 0.50);
+}
+
+.app-title {
+	font-size: 35px;
+	font-weight: 700;
+	color: #fefefe;
+}
+
+.password-display {
+	margin-block: 20px;
+	font-size: 30px;
+	color: #ffeba7;
+}
+
+.password-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.range-input {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#characterAmountNumber {
+	outline: none;
+	padding-left: 10px;
+}
+
+#characterAmountRange {
+	margin-inline: 10px;
+}
+
+.custom-input, .range-input {
+	margin-block: 20px;
+}
+
+.custom-input label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 30px;
+}
+
+.custom-input input {
+	display: none;
+}
+
+svg {
+	overflow: visible;
+	margin-left: 50px;
+}
+
+.path {
+	fill: none;
+	stroke: #97BED9;
+	stroke-width: 6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+	stroke-dasharray: 241 9999999;
+	stroke-dashoffset: 0;
+}
+
+.custom-input input:checked ~ svg .path {
+	stroke-dasharray: 70.5096664428711 9999999;
+	stroke-dashoffset: -262.2723388671875;
+}
+
+.submit-button {
+	margin-block: 20px;
+	/* margin: 1rem; */
+	border: none;
+	border-radius: 4px;
+	font-weight: bold;
+	font-size: .8em;
+	text-transform: uppercase;
+	padding: 0.6em 1.2em;
+	background-color: #ffeba7;
+	color: #5e6681;
+	box-shadow: 0 8px 24px 0 rgb(255 235 167 / 20%);
+	transition: all .3s ease-in-out;
+}
+
+.submit-button:hover {
+	background-color: #5e6681;
+	color: #ffeba7;
+	box-shadow: 0 8px 24px 0 rgb(16 39 112 / 20%);
+}
