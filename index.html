@@ -7,7 +7,27 @@
 	<title>Password Generator</title>
 </head>
 <body>
-	<h1>App working</h1>
+	<div class="container">
+		<h1 class="app-title">Password Generator</h1>
+		<h3>password</h3>
+
+		<form>
+			<label for="characterAmountNumber">Number of Characters</label>
+			<input type="range" min="1" max="50" value="10" id="characterAmountRange">
+			<input type="number" min="1" max="50" value="10" id="characterAmountNumber">
+
+			<label for="includeUppercase">Include Uppercase</label>
+			<input type="checkbox" id="includeUppercase" >
+
+			<label for="includeNumbers">Include Numbers</label>
+			<input type="checkbox" id="includeNumbers" >
+
+			<label for="includeSymbols">Include Symbols</label>
+			<input type="checkbox" id="includeSymbols" >
+
+			<button type="submit">Generate Password</button>
+		</form>
+	</div>
 
 
 
